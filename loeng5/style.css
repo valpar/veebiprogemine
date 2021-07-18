@@ -1,0 +1,62 @@
+*{
+    margin: 0 !important;
+}
+
+/*paral sektsiooni suuruse fikseerimine ja kujundus*/
+.paral {
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/*paral sektsiooni teksti kujundus*/
+.paral p {
+    font-size: 40px;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 60px;
+}
+/*h1 kujundus*/
+.paral h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 80px;
+    text-align: center;
+    padding-top: 100px;
+    line-height: 100px;
+}
+
+/*piltide lisamine*/
+/* Image for Parallax Section */
+.paralsec {
+    background-image: url("assets/wiiralt.jpg");
+}
+
+.paralsec1 {
+    background-image: url("assets/koler.jpg");
+}
+
+.paralsec2 {
+    background-image: url("assets/kugelgen.jpg");
+}
+
+.paralsec3 {
+    background-image: url("assets/maran.jpg");
+}
+
+.paralsec4 {
+    background-image: url("assets/kallis.jpg");
+}
+
+.paralsec5 {
+    background-image: url("assets/vint.jpg");
+}
+
+.paralsec6 {
+    background-image: url("assets/essen.jpg");
+}
+
+.paralsec7 {
+    background-image: url("assets/koler2.jpg");
+}
+

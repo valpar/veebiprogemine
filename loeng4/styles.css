@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"); /* valin google fontide seast fondi */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif; /* teen nii, et kõigile kehtis see ette antud font */
+}
+
+body {
+  /* Määran, et kasutaks flexi ja mis suunas see liigub */
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  /* määran sektsioonidele paddingu */
+  padding: 125px 100px;
+}
+
+ul {
+  /* defineerin unordered listi elementide välimuse */
+  display: flex;
+  list-style-type: none; /* määran, et neil ei oleks punkte ees */
+  flex-direction: row; /* määran flex suuna */
+  justify-content: center;
+}
+
+#myVideo {
+  filter: brightness(
+    80%
+  ); /* muudan headeri video tumedamaks, et oleks silmasõbralikum */
+}
+
+header {
+  color: white;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+video {
+  /* määran video asukoha ja vajalikud väärtused */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  z-index: -100;
+  object-position: center;
+  object-fit: cover;
+}
+
+.pood--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+.pood--header h1 {
+  /* määran headeri classi h1 spetsiifilised väärtused */
+  font-size: 6em;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+.pood--header h3 {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.btn {
+  /* Nupu vajalikud atribuudid */
+  background-color: #1b9cfc;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 20px 40px;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  /* Nupule hover effekt */
+  transition: 0.5s;
+  opacity: 1;
+}
+
+hr {
+  /* Muudan htmli default hr kujundust */
+  width: 450px;
+  height: 2px;
+  background-color: #2c3a47;
+  border: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.meist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #596869;
+  font-weight: 400;
+}
+
+.meist h3 {
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #2c3a47;
+}
+
+.meist p {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.grid {
+  /* gridi osaga teen pildi asukohad nii nagu soovin */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meist .grid li {
+  /* määran gridi välja väärtused */
+  width: 50%;
+  padding: 25px;
+  height: 350px;
+  border-radius: 5px;
+  background-size: cover;
+  background-clip: content-box;
+  background-position: center;
+}
+
+.suur {
+  /* määran gridi elemendi suurused */
+  flex-basis: 60%;
+}
+.vaike {
+  flex-basis: 30%;
+}
+
+.tanker {
+  /* muudan kõik pildid algselt halliks */
+  background: url("assets/tanker.jpg");
+  transform: scale(1);
+  filter: grayscale(100);
+}
+.lehe {
+  background: url("assets/lehe.jpg");
+  transform: scale(1);
+  filter: grayscale(100);
+}
+.pohjala {
+  background: url("assets/pohjala.jpeg");
+  transform: scale(1);
+  filter: grayscale(100);
+}
+.ollenaut {
+  background: url("assets/ollenaut.jpg");
+  transform: scale(1);
+  filter: grayscale(100);
+}
+
+.pohjala:hover,
+.ollenaut:hover,
+.tanker:hover,
+.lehe:hover {
+  /* lisan piltidele hoveri ja et hall kaoks ära */
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+  filter: grayscale(0);
+}
+
+.kontakt {
+  /* formi headeri väärtused */
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: #2c3a47;
+  text-align: center;
+}
+
+form {
+  /* formi suurus ja margin põhjast */
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.tagasiside {
+  /* ´kujundan vormi vastavalt soovile */
+  font-size: 20px;
+  line-height: 22px;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid#1b9cfc;
+}
+
+textarea {
+  /* defineerin eraldi feedbacki ala */
+  height: 150px;
+  line-height: 150%;
+}
+
+.submit {
+  /* saatmis nupu kujundus */
+  width: 100%;
+  background: #1b9cfc;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.submit:hover {
+  /* saatmisnupu hover effekt */
+  transition: 0.8s;
+  opacity: 1;
+}
+
+footer {
+  /* footeri kujundus ja suurus */
+  background: #1b9cfc;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}
+footer a {
+  /* footeri ikoonide kujundus ja paigutus*/
+  font-size: 32px;
+  color: white;
+  margin: 0 20px 0 10px;
+  justify-content: center;
+}
+
+footer a:hover {
+  transition: 0.6s;
+  color: #2c3a47;
+}

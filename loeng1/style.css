@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/* üldine body stiil, taustapildi suurus*/
+body{
+   text-align: center;
+   font-family: 'Raleway', sans-serif;
+   background-image: url("pildid/taust.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 2em;
+   color: rgb(94, 80, 80);
+}
+
+/* tabeli kujundus*/
+ul,ol,table {
+    display: table;
+    margin: 0 auto;
+}
+
+/* vaheriba kujundus*/
+hr{
+    border-color: rgb(165, 85, 85)
+}
